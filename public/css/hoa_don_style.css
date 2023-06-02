@@ -1,0 +1,132 @@
+.cs-container {
+  width: 100%;
+  padding: 30px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.lh-15 {
+  line-height: 0em;
+}
+
+.pl-6 {
+  padding-left: -1em;
+}
+
+.cs-invoice_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cs-mb10 {
+  margin-bottom: 10px;
+}
+
+.cs-invoice_left {
+  max-width: 100%;
+}
+
+p{
+  margin-top: 0;
+  line-height: 0.4em;
+}
+
+.cs-text_right {
+  text-align: right;
+}
+
+.cs-invoice_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cs-invoice_btns .cs-invoice_btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.cs-invoice_btns .cs-invoice_btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.cs-invoice_btn {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.cs-invoice_btn svg {
+  width: 24px;
+  margin-right: 5px;
+}
+
+.cs-invoice_btn.cs-color1 {
+  color: #111111;
+  background: rgba(42, 209, 157, 0.15);
+}
+
+.cs-invoice_btn.cs-color1:hover {
+  background-color: rgba(42, 209, 157, 0.3);
+}
+
+.cs-invoice_btn.cs-color2 {
+  color: #fff;
+  background: #2ad19d;
+}
+
+.cs-invoice_btn.cs-color2:hover {
+  background-color: rgba(42, 209, 157, 0.8);
+}
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+
+  .printId {
+    visibility: visible;
+  }
+
+    .cs-container {
+        width: 100%;
+        padding: 30px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+  .cs-invoice_head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .cs-invoice_left {
+    max-width: 100%;
+  }
+}
